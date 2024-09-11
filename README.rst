@@ -47,8 +47,8 @@ information, please refer to the `official documentation`_
     source ~/openstack.rc
     qc fetch --name dev-cluster -k dev-cluster.kcfg.yml
     export KUBECONFIG=$(pwd)/dev-cluster.kcfg.yml
-    kubeconfig get nodes --context dev-cluster
-    kubeconfig get pods -n foo
+    kubectl get nodes --context dev-cluster
+    kubectl get pods -n foo
 
 For more information on openstack rc files and how to generate them, see
 `Installing Openstack CLI Clients`_.
